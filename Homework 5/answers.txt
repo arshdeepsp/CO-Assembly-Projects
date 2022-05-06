@@ -1,0 +1,15 @@
+1) Assuming 3.5 clock cycles per instruction. (No pipelining)
+
+3 * la + li = 14
+16 * (beqz + 2 * lw + add + sw + 4 * addi + b) + beqz = 563 (Approx)
+
+Total = 14 + 563 = 577 Clock Cycles
+
+----------
+
+2) Assuming 1 clock cycle per second (With pipelining)
+
+3 * la + li = 4
+16 * (beqz + 2 * lw + add + sw + 4 * addi + b) + beqz = 161 (Approx)
+
+Total = 161 + 4 = 165 Clock Cycles
