@@ -42,12 +42,12 @@ syscall
 
 # Test 2 - Overflow
 # Lower bits
-li $t0, 4000000000
-li $t2, 4000000000
+li $t0, 4294967295
+li $t2, 1
 
 # Upper bits
-li $t1, 4000000000
-li $t3, 4000000000
+li $t1, 4294967295
+li $t3, 0
 
 addiu $sp, $sp, -28
 sw $t0, 0($sp)
